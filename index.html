@@ -1,0 +1,280 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+body {
+	background-color: #000;
+	transform-origin: 0px 0px;
+	transform: scale(0.4);
+}
+img {
+	border: 20px solid #fff;
+	box-shadow: 0px 5px 20px 10px rgba(0,0,0,0.5);
+	position: absolute;
+	transform-origin: 0 0;
+
+	filter: url(#filter-sample);
+  -webkit-filter: url(#filter-sample);
+}
+img.top {
+	filter: none;
+  -webkit-filter: none;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+<script>
+var img = [
+"IMG_0934.JPG",
+"IMG_0935.JPG",
+"IMG_0936.JPG",
+"IMG_0937.JPG",
+"IMG_0938.JPG",
+"IMG_0939.JPG",
+"IMG_0940.JPG",
+"IMG_0941.JPG",
+"IMG_0942.JPG",
+"IMG_0943.JPG",
+"IMG_0944.JPG",
+"IMG_0945.JPG",
+"IMG_0946.JPG",
+"IMG_0947.JPG",
+"IMG_0948.JPG",
+"IMG_0949.JPG",
+"IMG_0950.JPG",
+"IMG_0951.JPG",
+"IMG_0952.JPG",
+"IMG_0953.JPG",
+"IMG_0954.JPG",
+"IMG_0955.JPG",
+"IMG_0956.JPG",
+"IMG_0957.JPG",
+"IMG_0958.JPG",
+"IMG_0959.JPG",
+"IMG_0960.JPG",
+"IMG_0961.JPG",
+"IMG_0962.JPG",
+"IMG_0963.JPG",
+"IMG_0964.JPG",
+"IMG_0965.JPG",
+"IMG_0966.JPG",
+"IMG_0967.JPG",
+"IMG_0968.JPG",
+"IMG_0969.JPG",
+"IMG_0970.JPG",
+"IMG_0971.JPG",
+"IMG_0972.JPG",
+"IMG_0973.JPG",
+"IMG_0974.JPG",
+"IMG_0975.JPG",
+"IMG_0976.JPG",
+"IMG_1065.JPG",
+"IMG_1066.JPG",
+"IMG_1067.JPG",
+"IMG_1068.JPG",
+"IMG_1069.JPG",
+"IMG_1070.JPG",
+"IMG_1071.JPG",
+"IMG_1072.JPG",
+"IMG_1073.JPG",
+"IMG_1074.JPG",
+"IMG_1075.JPG",
+"IMG_1076.JPG",
+"IMG_1077.JPG",
+"IMG_1078.JPG",
+"IMG_1079.JPG",
+"IMG_1080.JPG",
+"IMG_1081.JPG",
+"IMG_1082.JPG",
+"IMG_1083.JPG",
+"IMG_1084.JPG",
+"IMG_1085.JPG",
+"IMG_1086.JPG",
+"IMG_1087.JPG",
+"IMG_1088.JPG",
+"IMG_1089.JPG",
+"IMG_1090.JPG",
+"IMG_1091.JPG",
+"IMG_1092.JPG",
+"IMG_1093.JPG",
+"IMG_1094.JPG",
+"IMG_1095.JPG",
+"IMG_1096.JPG",
+"IMG_1097.JPG",
+"IMG_1098.JPG",
+"IMG_1099.JPG",
+"IMG_1100.JPG",
+"IMG_1101.JPG",
+"IMG_1102.JPG",
+"IMG_1103.JPG",
+"IMG_1104.JPG",
+"IMG_1105.JPG",
+"IMG_1106.JPG",
+"IMG_1107.JPG",
+"IMG_1108.JPG",
+"IMG_1109.JPG",
+"IMG_1110.JPG",
+"IMG_1111.JPG",
+"IMG_1112.JPG",
+"IMG_1113.JPG",
+"IMG_1114.JPG",
+"IMG_1115.JPG",
+"IMG_1116.JPG",
+"IMG_1117.JPG",
+"IMG_1118.JPG",
+"IMG_1119.JPG",
+"IMG_1120.JPG",
+"IMG_1121.JPG",
+"IMG_1122.JPG",
+"IMG_1123.JPG",
+"IMG_1124.JPG",
+"IMG_1125.JPG",
+"IMG_1126.JPG",
+"IMG_1127.JPG",
+"IMG_1128.JPG",
+"IMG_1129.JPG",
+"IMG_1130.JPG",
+"IMG_1131.JPG",
+"IMG_1132.JPG",
+"IMG_1133.JPG",
+"IMG_1134.JPG",
+"IMG_1135.JPG",
+"IMG_1136.JPG",
+"IMG_1137.JPG",
+"IMG_1138.JPG",
+"IMG_1139.JPG",
+"IMG_1140.JPG",
+"IMG_1141.JPG",
+"IMG_1142.JPG",
+"IMG_1143.JPG",
+"IMG_1144.JPG",
+"IMG_1145.JPG",
+"IMG_1146.JPG",
+"IMG_1147.JPG",
+"IMG_1148.JPG",
+"IMG_1149.JPG",
+"IMG_1150.JPG",
+"IMG_1151.JPG",
+"IMG_1152.JPG",
+"IMG_1153.JPG",
+"IMG_1154.JPG",
+"IMG_1155.JPG",
+"IMG_1156.JPG",
+"IMG_1157.JPG",
+"IMG_1158.JPG",
+"IMG_1159.JPG",
+"IMG_1160.JPG",
+"IMG_1161.JPG",
+"IMG_1162.JPG",
+"IMG_1163.JPG",
+"IMG_1164.JPG",
+"IMG_1165.JPG",
+"IMG_1166.JPG",
+"IMG_1167.JPG",
+"IMG_1168.JPG",
+"IMG_1169.JPG",
+"IMG_1170.JPG",
+"IMG_1171.JPG",
+"IMG_1172.JPG",
+"IMG_1173.JPG",
+"IMG_1174.JPG",
+"IMG_1175.JPG",
+"IMG_1176.JPG",
+"IMG_1177.JPG",
+"IMG_1178.JPG",
+"IMG_1179.JPG",
+"IMG_1180.JPG",
+"IMG_1181.JPG",
+"IMG_1184.JPG",
+"IMG_1185.JPG",
+"IMG_1186.JPG",
+"IMG_1187.JPG",
+"IMG_1188.JPG",
+"IMG_1189.JPG",
+"IMG_1190.JPG",
+"IMG_1191.JPG",
+"IMG_1192.JPG",
+"IMG_1193.JPG",
+"IMG_1194.JPG",
+"IMG_1195.JPG",
+"IMG_1196.JPG",
+"IMG_1197.JPG",
+"IMG_1198.JPG",
+"IMG_1199.JPG",
+"IMG_1200.JPG",
+"IMG_1201.JPG",
+"IMG_1202.JPG",
+"IMG_1203.JPG",
+"IMG_1204.JPG",
+"IMG_1205.JPG",
+"IMG_1206.JPG",
+"IMG_1207.JPG",
+"IMG_1208.JPG",
+"IMG_1209.JPG",
+"IMG_1210.JPG",
+"IMG_1211.JPG",
+"IMG_1212.JPG",
+"IMG_1213.JPG",
+"IMG_1214.JPG",
+"IMG_1215.JPG",
+"IMG_1216.JPG",
+"IMG_1217.JPG",
+"IMG_1218.JPG",
+"IMG_1219.JPG",
+"IMG_1220.JPG",
+"IMG_1221.JPG",
+"IMG_1222.JPG",
+"IMG_1223.JPG",
+"IMG_1224.JPG",
+"IMG_1225.JPG",
+"IMG_1226.JPG",
+"IMG_1227.JPG",
+"IMG_1228.JPG",
+"IMG_1229.JPG",
+]
+var z = 100;
+var w = window.innerWidth;
+var h = window.innerHeight;
+console.log(w,h);
+Array.prototype.slice.call(crypto.getRandomValues(new Uint8Array(10))).map(i => i % img.length).map(i => img[i]).forEach((i, ix) => {
+	let index = ix;
+	let iurl = "images/" + i;
+	let img = new Image();
+	img.src = iurl;
+	img.onload = () => {	
+		var m = document.createElement("img");
+		m.src = iurl;
+		document.body.appendChild(m);
+		var t = Math.random() * h*1 - 0.5*h;
+		var l = Math.random() * w*1 - 0.0*w;
+		var r = Math.random() * 30 - 15;
+		if (index == 0) {
+			m.className = "top";
+			t = 0.05*h;
+			l = 0.5*w;
+			r = Math.random() * 10 - 5;
+			console.log(t,l,r,index);
+		}
+		m.style.top = "0px";
+		m.style.left = "0px";
+		//m.style.transformOrigin = window.innerWidth/2 + "px " + window.innerHeight/2 + "px";
+		m.style.transformOrigin = "50% 50%";
+		console.log(window.innerWidth, window.innerHeight);
+		m.style.transform = "translate(" + l + "px, " + t + "px) rotatez(" + r + "deg)"
+		m.style.zIndex = z - index;
+	}
+})
+</script>
+
+<svg data-bind="real-svg">
+  <filter id="filter-sample">
+      <feColorMatrix type="matrix" values="0 0.3 0 0 0 0 0.3 0 0 0 0 0.3 0 0 0 0 1 0 1 0"></feColorMatrix>
+  </filter>
+</svg>
+</body>
+</html>
